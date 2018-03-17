@@ -15,7 +15,7 @@ Typical usage:
 
 Issues:
 
-  1.) The current RSA key generation uses the default random.randrange(nx, ny) function; which produces a mersenne twister. This means that the RSA key generation is not totally cryptographically secure due to the "predictabilty" of the mersene twiseter function if an attacker is able to find the seed value and current index. (This issue will be resolved in the future, by an implementation of the blum blum shub algorithm which is more cryptographically secure as it is much less predictable due to the nature of its algorithm)
+  1.) The current RSA key generation uses the default random.randrange(nx, ny) function; which produces a mersenne twister. This means that the RSA key generation is not totally cryptographically secure due to the "predictabilty" of the mersenne twister function if an attacker is able to find the seed value and current index. (This issue will be resolved in the future, by an implementation of the blum blum shub algorithm which is more cryptographically secure as it is much less predictable due to the nature of its algorithm)
   
   2.) Since the program will overwrite the current working file there is an optional backup directory button. The button should then set a backup directory in order to save an identical bytewise copy of the file you select when decrypting/encrypting in order to prevent data loss.
   
