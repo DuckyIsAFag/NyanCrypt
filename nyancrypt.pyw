@@ -1,13 +1,8 @@
-import tkinter as tk
-import pickle, math, fractions, random
-import tkinter.filedialog as filedialog
+import pickle, math, fractions, random, sys, time, os
+import tkinter as tk, tkinter.filedialog as filedialog
 import tkinter.messagebox as message_box
+from tkinter import PhotoImage; from PIL import Image as PIL_IMAGE, ImageTk as TK_IMAGE; 
 from tkinter.ttk import Progressbar as tk_progress
-import sys
-import time
-from tkinter import PhotoImage
-import os
-from PIL import Image as PIL_IMAGE, ImageTk as TK_IMAGE
 
 def coprime(a, b):
     return fractions.gcd(a, b) == 1;
