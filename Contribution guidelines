@@ -1,0 +1,38 @@
+Thank you for deciding to contribute to "NyanCrypt v1.0". Before you upload your contribution, please make sure your Python file follows these steps.
+
+Annotation:
+  #Code must be annotated to an agreeable standard along with a declaration that the code is yours.
+  #Please ensure that your code is clear and read-able.
+
+Avoiding duplicate posts:
+  #Before posting, please make sure that no there's no other similar contribution. (E.g You contribute a different gui system when another has already been contributed which is similar to yours).
+  
+Avoiding "patch-it-up" fixes:
+  #Before posting, please make sure that your code is fully functional and not buggy. Please also make sure that your code isn't a "patch-it-up" fix to a bug or issue, as these methods can lead to more serious issues in the future.
+  #Also remember that if your code poses security risks to the cryptographic algorithms put in place. It will be removed.
+  
+Contributions to the random number generation system:
+  #Before posting a random number generator, please detail the name of the algorithm in use, you must also test the PRNG using the chi-square testing methodology. In your chi-square report, please detail the degrees of freedom (number of buckets -1) and then your statistical calculation based on the result.
+  
+Using python modules:
+  #In NyanCrypt we are trying to reduce the amount of "non-standard modules" in use. Currently we are using:::
+  
+    #MATHEMATIC MODULES
+    +math
+    +fractions
+    +random
+    #Data handling
+    +pickle
+    +sys
+    #System
+    +os
+    
+    #GUI
+    +tkinter (as tk)
+    +tkinter.filedialog (as filedialog)
+    +tkinter.messagebox (as message_box)
+    + FROM tkinter + PhotoImage
+    
+    #Image manipulation (non standard { pip install PIL } / {python -m pip install PIL})
+    ++FROM PIL + Image (as PIL_IMAGE)
+    ++FROM PIL + ImageTk (as TK_IMAGE)
